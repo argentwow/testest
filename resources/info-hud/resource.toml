@@ -1,0 +1,9 @@
+# resources/info-hud/resource.toml
+type = 'js'
+client-main = 'client/index.js'
+client-files = [
+    'html/status.html',
+    'html/status.css',
+    'html/status.js'
+]
+deps = []

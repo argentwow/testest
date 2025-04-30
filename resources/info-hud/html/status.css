@@ -1,0 +1,59 @@
+/* resources/info-hud/html/status.css */
+body {
+    background-color: transparent; margin: 0; padding: 0; overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif; /* Veya Montserrat */
+    color: white; pointer-events: none;
+    -webkit-user-select: none; user-select: none;
+    font-weight: 500;
+}
+
+#status-container {
+    position: absolute;
+    bottom: 25px;
+    /* **** DEĞİŞİKLİK: Sol boşluk tekrar azaltıldı **** */
+    left: 17.5vw;  /* Map'e daha da yakın (19.5vw idi). Son ayar için değiştirilebilir. */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+#hunger-thirst-row { display: flex; margin-bottom: 5px; }
+
+.status-box {
+    display: inline-flex; align-items: center;
+    padding: 6px 10px; border-radius: 6px;
+    margin-right: 5px; margin-bottom: 5px;
+    font-size: 13px;
+    min-width: 60px;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Hafif koyu arka plan ekleyebiliriz */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.status-box .icon {
+    margin-right: 7px; /* İkonla yazı arası boşluk */
+    font-size: 14px; /* Font Awesome ikon boyutu */
+    text-align: center;
+    min-width: 15px; /* İkon alanı */
+}
+
+/* Renkler */
+#status-thirst { border-left: 3px solid rgba(52, 152, 219, 0.9); background-color: rgba(52, 152, 219, 0.4); } /* Mavi */
+#status-thirst .icon { color: #A9D7F3; } /* İkon rengi */
+
+#status-hunger { border-left: 3px solid rgba(46, 204, 113, 0.9); background-color: rgba(46, 204, 113, 0.4); } /* Yeşil */
+#status-hunger .icon { color: #92E6B4; } /* İkon rengi */
+
+#weather-info { border-left: 3px solid rgba(88, 86, 214, 0.9); background-color: rgba(88, 86, 214, 0.4); width: auto; min-width: 135px; } /* Mor/Mavi */
+#weather-info .icon { color: #C0BFEF; }
+
+#location-info { border-left: 3px solid rgba(243, 156, 18, 0.9); background-color: rgba(243, 156, 18, 0.4); width: auto; min-width: 135px;} /* Turuncu */
+#location-info .icon { color: #FAD895; }
+
+#weather-icon { font-size: 16px; margin-right: 6px; min-width: 16px; text-align: center;}
+#weather-temp { font-weight: bold; margin-right: 4px; font-size: 14px; }
+#weather-desc { font-size: 12px; }
+
+#location-zone { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100px; }

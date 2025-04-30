@@ -1,0 +1,17 @@
+# resources/admin-commands/resource.toml
+
+type = 'js'
+main = 'server/index.js'
+client-main = 'client/index.js'
+client-files = [
+    'html/login.html',
+    'html/login.css',
+    'html/login.js',
+    'html/indicator.html',
+    'html/indicator.css',
+    # **** YENİ DOSYALAR ****
+    'html/factionmenu.html',
+    'html/factionmenu.css',
+    'html/factionmenu.js'
+]
+deps = []

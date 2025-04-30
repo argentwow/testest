@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Status HUD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="status.css">
+</head>
+<body>
+    <div id="status-container">
+        <div id="hunger-thirst-row">
+            <div class="status-box" id="status-thirst">
+                <i class="fas fa-tint icon"></i> <span id="value-thirst">100%</span>
+            </div>
+            <div class="status-box" id="status-hunger">
+                <i class="fas fa-hamburger icon"></i> <span id="value-hunger">100%</span>
+            </div>
+        </div>
+        <div class="status-box" id="weather-info">
+             <i id="weather-icon" class="fas fa-question icon"></i>
+            <span id="weather-temp">--°</span>
+            <span id="weather-desc">Yükleniyor...</span>
+        </div>
+        <div class="status-box" id="location-info">
+            <i class="fas fa-map-marker-alt icon"></i> <span id="location-zone">Bölge Adı</span>
+        </div>
+    </div>
+    <script src="status.js"></script>
+</body>
+</html>

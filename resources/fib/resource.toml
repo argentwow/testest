@@ -1,0 +1,11 @@
+# resources/fib/resource.toml
+type = 'js'
+main = 'server/index.js' # Sunucu tarafı kodumuz olacak
+client-main = 'client/index.js'
+client-files = [
+    # **** YENİ DOSYALAR ****
+    'html/garage.html',
+    'html/garage.css',
+    'html/garage.js'
+]
+deps = [] # Şimdilik başka kaynağa bağımlı değil

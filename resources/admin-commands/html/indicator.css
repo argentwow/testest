@@ -1,0 +1,29 @@
+/* resources/admin-commands/html/indicator.css */
+body {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif; /* Veya istediğin başka bir font */
+    pointer-events: none; /* Bu WebView'ın tıklama almamasını sağlar */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#admin-indicator {
+    position: absolute;
+    top: 15px;
+    right: 15px; /* Sağ üst köşe */
+    /* Sağ üstten biraz sola almak için margin-right eklenebilir: */
+    /* margin-right: 100px; */
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Hafif arka plan */
+    color: #F44336; /* Kırmızı renk */
+    font-weight: bold; /* Kalın font */
+    font-size: 16px;
+    border-radius: 4px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    white-space: nowrap; /* Tek satırda kalmasını sağla */
+}

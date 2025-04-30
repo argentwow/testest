@@ -1,0 +1,93 @@
+/* resources/admin-commands/html/login.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent; /* Veya hafif karanlık bir overlay: rgba(0,0,0,0.5); */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+#login-box {
+    background-color: rgba(30, 30, 30, 0.85);
+    padding: 30px 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+#password-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box; /* Padding'i dahil et */
+    font-size: 16px;
+}
+
+#password-input:focus {
+    outline: none;
+    border-color: #4CAF50; /* Yeşil */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+    transition: background-color 0.2s ease;
+}
+
+#submit-button {
+    background-color: #4CAF50; /* Yeşil */
+    color: white;
+}
+
+#submit-button:hover {
+    background-color: #45a049;
+}
+
+#cancel-button {
+    background-color: #f44336; /* Kırmızı */
+    color: white;
+}
+
+#cancel-button:hover {
+    background-color: #da190b;
+}
+
+.error {
+    color: #ff7b7b; /* Hata mesajı rengi */
+    min-height: 1.2em; /* Hata mesajı yokken boşluk bırak */
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Hata durumunda input titretme animasyonu (opsiyonel) */
+#login-box.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}

@@ -1,0 +1,11 @@
+# resources/freeroam/resource.toml
+
+type = 'js'
+main = 'server/index.js'
+client-main = 'client/index.js'
+client-files = [
+    'html/index.html',
+    'html/style.css',
+    'html/script.js'
+]
+deps = []

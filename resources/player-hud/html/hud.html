@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Player HUD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hud.css">
+</head>
+<body>
+    <div id="hud-container">
+        <div id="hud-content">
+            <div id="hud-info">
+                <div id="server-name">ARG RP</div>
+                <div id="player-info">
+                    <span class="icon">👤</span>
+                    <span id="hud-playercount">0</span>
+                    <span class="separator">|</span>
+                    <span class="id-label">ID:</span><span class="id-hash">#</span><span id="hud-playerid">0</span> </div>
+                <div id="datetime-info">
+                    <span id="hud-date">DD Ay YYYY</span>
+                    <span id="hud-time">HH:MM</span>
+                </div>
+            </div>
+            <div id="server-logo-placeholder">A</div>
+        </div>
+        <div id="wanted-level">
+            </div>
+    </div>
+    <script src="hud.js"></script>
+</body>
+</html>
